@@ -30,6 +30,7 @@ final class EmployeeOverviewView: UIView {
             imageView.widthAnchor.constraint(equalToConstant: imageView.layer.cornerRadius * 2),
             imageView.heightAnchor.constraint(equalTo: imageView.widthAnchor)
         ])
+        imageView.accessibilityIdentifier = "image_view"
         return imageView
     }()
     
@@ -39,6 +40,7 @@ final class EmployeeOverviewView: UIView {
         nameLabel.font = .preferredFont(forTextStyle: .headline)
         nameLabel.adjustsFontForContentSizeCategory = true
         nameLabel.adjustsFontSizeToFitWidth = true
+        nameLabel.accessibilityIdentifier = "name"
         return nameLabel
     }()
     
@@ -49,6 +51,7 @@ final class EmployeeOverviewView: UIView {
         jobRoleLabel.textColor = .secondaryLabel
         jobRoleLabel.adjustsFontForContentSizeCategory = true
         jobRoleLabel.adjustsFontSizeToFitWidth = true
+        jobRoleLabel.accessibilityIdentifier = "job_role"
         return jobRoleLabel
     }()
     
