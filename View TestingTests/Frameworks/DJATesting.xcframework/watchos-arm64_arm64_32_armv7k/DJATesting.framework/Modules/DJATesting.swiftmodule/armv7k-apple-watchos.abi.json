@@ -1,0 +1,258 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "TopLevel",
+    "printedName": "TopLevel",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "DJATesting",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "DJATesting",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "DJATesting",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "DJATesting",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "DJATesting",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "DJATesting",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "Decodable",
+        "printedName": "Decodable",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "from",
+            "printedName": "from(fileName:inBundle:dateDecodingStrategy:keyDecodingStrategy:dataDecodingStrategy:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "GenericTypeParam",
+                "printedName": "τ_0_0"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bundle",
+                "printedName": "Foundation.Bundle",
+                "usr": "c:objc(cs)NSBundle"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.JSONDecoder.DateDecodingStrategy?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DateDecodingStrategy",
+                    "printedName": "Foundation.JSONDecoder.DateDecodingStrategy",
+                    "usr": "s:10Foundation11JSONDecoderC20DateDecodingStrategyO"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.JSONDecoder.KeyDecodingStrategy?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "KeyDecodingStrategy",
+                    "printedName": "Foundation.JSONDecoder.KeyDecodingStrategy",
+                    "usr": "s:10Foundation11JSONDecoderC19KeyDecodingStrategyO"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.JSONDecoder.DataDecodingStrategy?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DataDecodingStrategy",
+                    "printedName": "Foundation.JSONDecoder.DataDecodingStrategy",
+                    "usr": "s:10Foundation11JSONDecoderC20DataDecodingStrategyO"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:Se10DJATestingE4from8fileName8inBundle20dateDecodingStrategy03keyhI004datahI0xSS_So8NSBundleC10Foundation11JSONDecoderC04DatehI0OSgAL03KeyhI0OSgAL04DatahI0OSgtKFZ",
+            "mangledName": "$sSe10DJATestingE4from8fileName8inBundle20dateDecodingStrategy03keyhI004datahI0xSS_So8NSBundleC10Foundation11JSONDecoderC04DatehI0OSgAL03KeyhI0OSgAL04DatahI0OSgtKFZ",
+            "moduleName": "DJATesting",
+            "genericSig": "<τ_0_0 where τ_0_0 : Swift.Decodable>",
+            "sugared_genericSig": "<Self where Self : Swift.Decodable>",
+            "static": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:Se",
+        "mangledName": "$sSe",
+        "moduleName": "Swift",
+        "isExternal": true
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "NSObject",
+        "printedName": "NSObject",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "forcedInit",
+            "printedName": "forcedInit()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "DynamicSelf",
+                "printedName": "Self"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:So8NSObjectC10DJATestingE10forcedInitABXDyFZ",
+            "mangledName": "$sSo8NSObjectC10DJATestingE10forcedInitABXDyFZ",
+            "moduleName": "DJATesting",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:objc(cs)NSObject",
+        "moduleName": "ObjectiveC",
+        "isOpen": true,
+        "intro_watchOS": "1.0",
+        "objc_name": "NSObject",
+        "declAttributes": [
+          "Available",
+          "ObjC",
+          "Dynamic"
+        ],
+        "isExternal": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": []
+}

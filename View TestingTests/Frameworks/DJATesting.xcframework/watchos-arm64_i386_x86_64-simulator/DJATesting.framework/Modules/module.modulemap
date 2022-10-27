@@ -1,0 +1,11 @@
+framework module DJATesting {
+  umbrella header "DJATesting.h"
+
+  export *
+  module * { export * }
+}
+
+module DJATesting.Swift {
+  header "DJATesting-Swift.h"
+  requires objc
+}

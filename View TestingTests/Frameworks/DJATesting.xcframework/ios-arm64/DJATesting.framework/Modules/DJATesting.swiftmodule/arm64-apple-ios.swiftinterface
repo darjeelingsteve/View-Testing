@@ -1,0 +1,486 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.7 (swiftlang-5.7.0.127.4 clang-1400.0.29.50)
+// swift-module-flags: -target arm64-apple-ios11.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name DJATesting
+// swift-module-flags-ignorable: -enable-bare-slash-regex
+@_exported import DJATesting
+import Foundation
+import Swift
+import UIKit
+import _Concurrency
+import _StringProcessing
+extension Swift.Decodable {
+  public static func from(fileName: Swift.String, inBundle bundle: Foundation.Bundle, dateDecodingStrategy: Foundation.JSONDecoder.DateDecodingStrategy? = nil, keyDecodingStrategy: Foundation.JSONDecoder.KeyDecodingStrategy? = nil, dataDecodingStrategy: Foundation.JSONDecoder.DataDecodingStrategy? = nil) throws -> Self
+}
+extension UIKit.UIView {
+  @_Concurrency.MainActor(unsafe) public func subviews<T>(ofType type: T.Type) -> [T] where T : UIKit.UIView
+  @_Concurrency.MainActor(unsafe) public func subview<T>(ofType type: T.Type, withAccessibilityIdentifier accessibilityIdentifier: Swift.String) -> T? where T : UIKit.UIView
+  @_Concurrency.MainActor(unsafe) public func dja_isVisible() -> Swift.Bool
+}
+extension UIKit.UIView {
+  @_Concurrency.MainActor(unsafe) public func pixelColour(atPoint point: CoreFoundation.CGPoint) -> UIKit.UIColor
+}
+extension Swift.Array where Element : UIKit.UIView {
+  public func orderedHorizontally() -> [Element]
+  public func orderedVertically() -> [Element]
+}
+@available(iOS 13.0, tvOS 13.0, *)
+extension UIKit.UIAction {
+  @_Concurrency.MainActor(unsafe) public func invokeHandler()
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) public class MockTabBarController : UIKit.UITabBarController {
+  @_Concurrency.MainActor(unsafe) public var callsSuper: Swift.Bool
+  @_Concurrency.MainActor(unsafe) public var receivedViewControllers: [UIKit.UIViewController]? {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) public var receivedSetViewControllersAnimatedFlag: Swift.Bool? {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func setViewControllers(_ viewControllers: [UIKit.UIViewController]?, animated: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) public var receivedShowViewController: UIKit.UIViewController? {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) public var receivedShowViewControllerSender: Any? {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func show(_ vc: UIKit.UIViewController, sender: Any?)
+  @_Concurrency.MainActor(unsafe) public var receivedShowDetailViewController: UIKit.UIViewController? {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) public var receivedShowDetailViewControllerSender: Any? {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func showDetailViewController(_ vc: UIKit.UIViewController, sender: Any?)
+  @_Concurrency.MainActor(unsafe) public var receivedPresentViewControllerMessage: Swift.Bool {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) public var receivedViewControllerForPresentation: UIKit.UIViewController? {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) public var receivedPresentViewControllerAnimatedFlag: Swift.Bool? {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) public var receivedPresentationCompletionClosure: (() -> Swift.Void)? {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func present(_ viewControllerToPresent: UIKit.UIViewController, animated flag: Swift.Bool, completion: (() -> Swift.Void)? = nil)
+  @_Concurrency.MainActor(unsafe) public var receivedDismissViewControllerMessage: Swift.Bool {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) public var receivedDismissalAnimatedFlag: Swift.Bool? {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) public var receivedDismissalCompletionClosure: (() -> Swift.Void)? {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func dismiss(animated flag: Swift.Bool, completion: (() -> Swift.Void)? = nil)
+  @_Concurrency.MainActor(unsafe) public var overriddenPresentedViewController: UIKit.UIViewController?
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public var presentedViewController: UIKit.UIViewController? {
+    @objc get
+  }
+  @_Concurrency.MainActor(unsafe) final public let mockTransitionCoordinator: DJATesting.MockTransitionCoordinator
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public var transitionCoordinator: UIKit.UIViewControllerTransitionCoordinator? {
+    @objc get
+  }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+@available(iOS 13.0, tvOS 13.0, *)
+extension UIKit.NSCollectionLayoutSection {
+  @_Concurrency.MainActor(unsafe) public var layoutGroup: UIKit.NSCollectionLayoutGroup {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) public func leadingSwipeActionsConfiguration(atIndexPath indexPath: Foundation.IndexPath) -> UIKit.UISwipeActionsConfiguration?
+  @_Concurrency.MainActor(unsafe) public func trailingSwipeActionsConfiguration(atIndexPath indexPath: Foundation.IndexPath) -> UIKit.UISwipeActionsConfiguration?
+}
+@available(iOS 14.5, *)
+extension UIKit.NSCollectionLayoutSection {
+  @_Concurrency.MainActor(unsafe) public func listSeparatorConfigurationForItem(atIndexPath indexPath: Foundation.IndexPath) -> UIKit.UIListSeparatorConfiguration?
+}
+@_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class MockPresentationViewController<T> : UIKit.UIViewController where T : UIKit.UIViewController {
+  @_Concurrency.MainActor(unsafe) public var callsSuper: Swift.Bool
+  @_Concurrency.MainActor(unsafe) final public let overriddenPresentedViewController: T
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public var presentedViewController: UIKit.UIViewController? {
+    @objc get
+  }
+  @_Concurrency.MainActor(unsafe) public init(overriddenPresentedViewController: T)
+  @_Concurrency.MainActor(unsafe) public var receivedPresentViewControllerMessage: Swift.Bool {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) public var receivedViewControllerForPresentation: UIKit.UIViewController? {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) public var receivedPresentViewControllerAnimatedFlag: Swift.Bool? {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) public var receivedPresentationCompletionClosure: (() -> Swift.Void)? {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func present(_ viewControllerToPresent: UIKit.UIViewController, animated flag: Swift.Bool, completion: (() -> Swift.Void)? = nil)
+  @_Concurrency.MainActor(unsafe) public var receivedDismissViewControllerMessage: Swift.Bool {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) public var receivedDismissalAnimatedFlag: Swift.Bool? {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) public var receivedDismissalCompletionClosure: (() -> Swift.Void)? {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func dismiss(animated flag: Swift.Bool, completion: (() -> Swift.Void)? = nil)
+  @objc deinit
+}
+extension ObjectiveC.NSObject {
+  public static func forcedInit() -> Self
+}
+extension UIKit.UIKeyCommand {
+  @_Concurrency.MainActor(unsafe) public func simulateCommandInvocation(on responder: UIKit.UIResponder)
+}
+extension UIKit.UIImage {
+  public static func image(ofColour colour: UIKit.UIColor, size: CoreFoundation.CGSize = CGSize(width: 1, height: 1)) -> UIKit.UIImage
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) public class MockSelectionFeedbackGenerator : UIKit.UISelectionFeedbackGenerator {
+  @_Concurrency.MainActor(unsafe) public var receivedPrepareMessage: Swift.Bool {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func prepare()
+  @_Concurrency.MainActor(unsafe) public var receivedSelectionChangedMessage: Swift.Bool {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func selectionChanged()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init()
+  @objc deinit
+}
+@objc @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class TraitCollectionOverridingViewController : UIKit.UIViewController {
+  @_Concurrency.MainActor(unsafe) public init(overridenTraits: UIKit.UITraitCollection, forView view: UIKit.UIView)
+  @_Concurrency.MainActor(unsafe) public init(overridenTraits: UIKit.UITraitCollection, forViewController viewController: UIKit.UIViewController)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) public class MockTransitionCoordinator : ObjectiveC.NSObject, UIKit.UIViewControllerTransitionCoordinator, UIKit.UIViewControllerTransitionCoordinatorContext {
+  @_Concurrency.MainActor(unsafe) @objc public func notifyWhenInteractionEnds(_ handler: @escaping (UIKit.UIViewControllerTransitionCoordinatorContext) -> Swift.Void)
+  @_Concurrency.MainActor(unsafe) @objc public func notifyWhenInteractionChanges(_ handler: @escaping (UIKit.UIViewControllerTransitionCoordinatorContext) -> Swift.Void)
+  @_Concurrency.MainActor(unsafe) @objc public var isInteractive: Swift.Bool
+  @_Concurrency.MainActor(unsafe) @objc public var isAnimated: Swift.Bool
+  @_Concurrency.MainActor(unsafe) @objc public var presentationStyle: UIKit.UIModalPresentationStyle
+  @_Concurrency.MainActor(unsafe) @objc public var initiallyInteractive: Swift.Bool
+  @_Concurrency.MainActor(unsafe) @objc public var isInterruptible: Swift.Bool
+  @_Concurrency.MainActor(unsafe) @objc public var isCancelled: Swift.Bool
+  @_Concurrency.MainActor(unsafe) @objc public var transitionDuration: Swift.Double
+  @_Concurrency.MainActor(unsafe) @objc public var percentComplete: CoreFoundation.CGFloat
+  @_Concurrency.MainActor(unsafe) @objc public var completionVelocity: CoreFoundation.CGFloat
+  @_Concurrency.MainActor(unsafe) @objc public var completionCurve: UIKit.UIView.AnimationCurve
+  @_Concurrency.MainActor(unsafe) @objc public var containerView: UIKit.UIView
+  @_Concurrency.MainActor(unsafe) @objc public var targetTransform: CoreFoundation.CGAffineTransform
+  @_Concurrency.MainActor(unsafe) public var receivedAnimateAlongsideTransitionAnimationClosure: ((UIKit.UIViewControllerTransitionCoordinatorContext) -> Swift.Void)? {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) public var receivedAnimateAlongsideTransitionCompletionClosure: ((UIKit.UIViewControllerTransitionCoordinatorContext) -> Swift.Void)? {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) @objc public func animate(alongsideTransition animation: ((UIKit.UIViewControllerTransitionCoordinatorContext) -> Swift.Void)?, completion: ((UIKit.UIViewControllerTransitionCoordinatorContext) -> Swift.Void)? = nil) -> Swift.Bool
+  @_Concurrency.MainActor(unsafe) public var receivedAnimateAlongsideTransitionInViewView: UIKit.UIView? {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) public var receivedAnimateAlongsideTransitionInViewAnimationClosure: ((UIKit.UIViewControllerTransitionCoordinatorContext) -> Swift.Void)? {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) public var receivedAnimateAlongsideTransitionInViewCompletionClosure: ((UIKit.UIViewControllerTransitionCoordinatorContext) -> Swift.Void)? {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) @objc public func animateAlongsideTransition(in view: UIKit.UIView?, animation: ((UIKit.UIViewControllerTransitionCoordinatorContext) -> Swift.Void)?, completion: ((UIKit.UIViewControllerTransitionCoordinatorContext) -> Swift.Void)? = nil) -> Swift.Bool
+  @_Concurrency.MainActor(unsafe) @objc public func viewController(forKey key: UIKit.UITransitionContextViewControllerKey) -> UIKit.UIViewController?
+  @_Concurrency.MainActor(unsafe) @objc public func view(forKey key: UIKit.UITransitionContextViewKey) -> UIKit.UIView?
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init()
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) public class MockViewControllerTransitionCoordinatorContext : ObjectiveC.NSObject, UIKit.UIViewControllerTransitionCoordinatorContext {
+  @_Concurrency.MainActor(unsafe) @objc public var isAnimated: Swift.Bool
+  @_Concurrency.MainActor(unsafe) @objc public var presentationStyle: UIKit.UIModalPresentationStyle
+  @_Concurrency.MainActor(unsafe) @objc public var initiallyInteractive: Swift.Bool
+  @_Concurrency.MainActor(unsafe) @objc public var isInterruptible: Swift.Bool
+  @_Concurrency.MainActor(unsafe) @objc public var isInteractive: Swift.Bool
+  @_Concurrency.MainActor(unsafe) @objc public var isCancelled: Swift.Bool
+  @_Concurrency.MainActor(unsafe) @objc public var transitionDuration: Swift.Double
+  @_Concurrency.MainActor(unsafe) @objc public var percentComplete: CoreFoundation.CGFloat
+  @_Concurrency.MainActor(unsafe) @objc public var completionVelocity: CoreFoundation.CGFloat
+  @_Concurrency.MainActor(unsafe) @objc public var completionCurve: UIKit.UIView.AnimationCurve
+  @_Concurrency.MainActor(unsafe) @objc public var containerView: UIKit.UIView
+  @_Concurrency.MainActor(unsafe) @objc public var targetTransform: CoreFoundation.CGAffineTransform
+  @_Concurrency.MainActor(unsafe) @objc public func viewController(forKey key: UIKit.UITransitionContextViewControllerKey) -> UIKit.UIViewController?
+  @_Concurrency.MainActor(unsafe) @objc public func view(forKey key: UIKit.UITransitionContextViewKey) -> UIKit.UIView?
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init()
+  @objc deinit
+}
+@objc @available(iOS 13.0, tvOS 13.0, *)
+@_Concurrency.MainActor(unsafe) public class MockCollectionLayoutEnvironment : ObjectiveC.NSObject, UIKit.NSCollectionLayoutEnvironment {
+  @_Concurrency.MainActor(unsafe) @objc final public let container: UIKit.NSCollectionLayoutContainer
+  @_Concurrency.MainActor(unsafe) @objc final public let traitCollection: UIKit.UITraitCollection
+  @_Concurrency.MainActor(unsafe) public init(container: UIKit.NSCollectionLayoutContainer = MockCollectionLayoutContainer(), traitCollection: UIKit.UITraitCollection = UITraitCollection())
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @available(iOS 11.0, tvOS 11.0, *)
+@_Concurrency.MainActor(unsafe) public class MockCollectionLayoutContainer : ObjectiveC.NSObject, UIKit.NSCollectionLayoutContainer {
+  @_Concurrency.MainActor(unsafe) @objc final public let contentSize: CoreFoundation.CGSize
+  @_Concurrency.MainActor(unsafe) @objc final public let effectiveContentSize: CoreFoundation.CGSize
+  @_Concurrency.MainActor(unsafe) @objc final public let contentInsets: UIKit.NSDirectionalEdgeInsets
+  @_Concurrency.MainActor(unsafe) @objc final public let effectiveContentInsets: UIKit.NSDirectionalEdgeInsets
+  @_Concurrency.MainActor(unsafe) public init(contentSize: CoreFoundation.CGSize = .zero, effectiveContentSize: CoreFoundation.CGSize = .zero, contentInsets: UIKit.NSDirectionalEdgeInsets = .zero, effectiveContentInsets: UIKit.NSDirectionalEdgeInsets = .zero)
+  @_Concurrency.MainActor(unsafe) @objc convenience override dynamic public init()
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @available(iOS 14.0, tvOS 14.0, *)
+@_Concurrency.MainActor(unsafe) public class MockSplitViewController : UIKit.UISplitViewController {
+  @_Concurrency.MainActor(unsafe) public var callsSuper: Swift.Bool
+  @_Concurrency.MainActor(unsafe) public var receivedCompactColumnViewController: UIKit.UIViewController? {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) public var receivedPrimaryColumnViewController: UIKit.UIViewController? {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) public var receivedSecondaryColumnViewController: UIKit.UIViewController? {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) public var receivedSupplementaryColumnViewController: UIKit.UIViewController? {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func setViewController(_ vc: UIKit.UIViewController?, for column: UIKit.UISplitViewController.Column)
+  @_Concurrency.MainActor(unsafe) public var receivedShowViewController: UIKit.UIViewController? {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) public var receivedShowViewControllerSender: Any? {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func show(_ vc: UIKit.UIViewController, sender: Any?)
+  @_Concurrency.MainActor(unsafe) public var receivedShowDetailViewController: UIKit.UIViewController? {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) public var receivedShowDetailViewControllerSender: Any? {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func showDetailViewController(_ vc: UIKit.UIViewController, sender: Any?)
+  @_Concurrency.MainActor(unsafe) public var receivedHiddenColumn: UIKit.UISplitViewController.Column? {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func hide(_ column: UIKit.UISplitViewController.Column)
+  @_Concurrency.MainActor(unsafe) public var receivedShownColumn: UIKit.UISplitViewController.Column? {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func show(_ column: UIKit.UISplitViewController.Column)
+  @_Concurrency.MainActor(unsafe) public var receivedPresentViewControllerMessage: Swift.Bool {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) public var receivedViewControllerForPresentation: UIKit.UIViewController? {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) public var receivedPresentViewControllerAnimatedFlag: Swift.Bool? {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) public var receivedPresentationCompletionClosure: (() -> Swift.Void)? {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func present(_ viewControllerToPresent: UIKit.UIViewController, animated flag: Swift.Bool, completion: (() -> Swift.Void)? = nil)
+  @_Concurrency.MainActor(unsafe) public var receivedDismissViewControllerMessage: Swift.Bool {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) public var receivedDismissalAnimatedFlag: Swift.Bool? {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) public var receivedDismissalCompletionClosure: (() -> Swift.Void)? {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func dismiss(animated flag: Swift.Bool, completion: (() -> Swift.Void)? = nil)
+  @_Concurrency.MainActor(unsafe) public var overriddenPresentedViewController: UIKit.UIViewController?
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public var presentedViewController: UIKit.UIViewController? {
+    @objc get
+  }
+  @_Concurrency.MainActor(unsafe) final public let mockTransitionCoordinator: DJATesting.MockTransitionCoordinator
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public var transitionCoordinator: UIKit.UIViewControllerTransitionCoordinator? {
+    @objc get
+  }
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @available(iOS 14.0, tvOS 14.0, *)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(style: UIKit.UISplitViewController.Style)
+  @objc deinit
+}
+extension UIKit.UICollectionViewLayout {
+  @_Concurrency.MainActor(unsafe) public var decorationViewClassesDictionary: [Swift.String : Swift.AnyClass] {
+    get
+  }
+}
+extension UIKit.UIBarButtonItem {
+  @_Concurrency.MainActor(unsafe) public var systemItem: UIKit.UIBarButtonItem.SystemItem? {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) public func simulateTap()
+}
+extension UIKit.UIControl {
+  @_Concurrency.MainActor(unsafe) public func simulatePrimaryActionTriggered()
+}
+@available(iOS 13.0, tvOS 13.0, *)
+extension UIKit.UICollectionViewCompositionalLayout {
+  @_Concurrency.MainActor(unsafe) public func section(atIndex index: Swift.Int) -> UIKit.NSCollectionLayoutSection?
+  @_Concurrency.MainActor(unsafe) public func section(atIndex index: Swift.Int, layoutEnvironment: UIKit.NSCollectionLayoutEnvironment) -> UIKit.NSCollectionLayoutSection?
+}
+@_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) public class PresentationCapturingViewController<ViewControllerType> : UIKit.UIViewController where ViewControllerType : UIKit.UIViewController {
+  @_Concurrency.MainActor(unsafe) public var receivedPresentViewControllerMessage: Swift.Bool {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) public var receivedViewControllerForPresentation: ViewControllerType? {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) public var receivedPresentViewControllerAnimatedFlag: Swift.Bool? {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) public var receivedPresentationCompletionClosure: (() -> Swift.Void)? {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func present(_ viewControllerToPresent: UIKit.UIViewController, animated flag: Swift.Bool, completion: (() -> Swift.Void)? = nil)
+  @_Concurrency.MainActor(unsafe) public var receivedDismissMessage: Swift.Bool {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) public var receivedDismissalAnimatedFlag: Swift.Bool? {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) public var receivedDismissalCompletionClosure: (() -> Swift.Void)? {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func dismiss(animated flag: Swift.Bool, completion: (() -> Swift.Void)? = nil)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+@objc @_Concurrency.MainActor(unsafe) public class MockImpactFeedbackGenerator : UIKit.UIImpactFeedbackGenerator {
+  @_Concurrency.MainActor(unsafe) final public let initialisedStyle: UIKit.UIImpactFeedbackGenerator.FeedbackStyle
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(style: UIKit.UIImpactFeedbackGenerator.FeedbackStyle)
+  @_Concurrency.MainActor(unsafe) public var receivedPrepareMessage: Swift.Bool {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func prepare()
+  @_Concurrency.MainActor(unsafe) public var receivedImpactOccuredMessage: Swift.Bool {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func impactOccurred()
+  @_Concurrency.MainActor(unsafe) public var receivedImpactOccuredIntensity: CoreFoundation.CGFloat? {
+    get
+  }
+  @available(iOS 13.0, *)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func impactOccurred(intensity: CoreFoundation.CGFloat)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) public class MockNavigationController : UIKit.UINavigationController {
+  @_Concurrency.MainActor(unsafe) public var callsSuper: Swift.Bool
+  @_Concurrency.MainActor(unsafe) public var receivedViewControllers: [UIKit.UIViewController]? {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) public var receivedSetViewControllersAnimatedFlag: Swift.Bool? {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func setViewControllers(_ viewControllers: [UIKit.UIViewController], animated: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) public var pushedViewController: UIKit.UIViewController? {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) public var receivedPushViewControllerAnimatedFlag: Swift.Bool? {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func pushViewController(_ viewController: UIKit.UIViewController, animated: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) public var receivedShowViewController: UIKit.UIViewController? {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) public var receivedShowViewControllerSender: Any? {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func show(_ vc: UIKit.UIViewController, sender: Any?)
+  @_Concurrency.MainActor(unsafe) public var receivedShowDetailViewController: UIKit.UIViewController? {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) public var receivedShowDetailViewControllerSender: Any? {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func showDetailViewController(_ vc: UIKit.UIViewController, sender: Any?)
+  @_Concurrency.MainActor(unsafe) public var receivedPopViewControllerMessage: Swift.Bool {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) public var receivedPopViewControllerAnimatedFlag: Swift.Bool? {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func popViewController(animated: Swift.Bool) -> UIKit.UIViewController?
+  @_Concurrency.MainActor(unsafe) public var poppedToViewController: UIKit.UIViewController? {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) public var receivedPopToViewControllerAnimatedFlag: Swift.Bool? {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func popToViewController(_ viewController: UIKit.UIViewController, animated: Swift.Bool) -> [UIKit.UIViewController]?
+  @_Concurrency.MainActor(unsafe) public var receivedPopToRootViewControllerMessage: Swift.Bool {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) public var receivedPopToRootViewControllerAnimatedFlag: Swift.Bool? {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func popToRootViewController(animated: Swift.Bool) -> [UIKit.UIViewController]?
+  @_Concurrency.MainActor(unsafe) public var receivedPresentViewControllerMessage: Swift.Bool {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) public var receivedViewControllerForPresentation: UIKit.UIViewController? {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) public var receivedPresentViewControllerAnimatedFlag: Swift.Bool? {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) public var receivedPresentationCompletionClosure: (() -> Swift.Void)? {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func present(_ viewControllerToPresent: UIKit.UIViewController, animated flag: Swift.Bool, completion: (() -> Swift.Void)? = nil)
+  @_Concurrency.MainActor(unsafe) public var receivedDismissViewControllerMessage: Swift.Bool {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) public var receivedDismissalAnimatedFlag: Swift.Bool? {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) public var receivedDismissalCompletionClosure: (() -> Swift.Void)? {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func dismiss(animated flag: Swift.Bool, completion: (() -> Swift.Void)? = nil)
+  @_Concurrency.MainActor(unsafe) public var overriddenPresentedViewController: UIKit.UIViewController?
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public var presentedViewController: UIKit.UIViewController? {
+    @objc get
+  }
+  @_Concurrency.MainActor(unsafe) final public let mockTransitionCoordinator: DJATesting.MockTransitionCoordinator
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public var transitionCoordinator: UIKit.UIViewControllerTransitionCoordinator? {
+    @objc get
+  }
+  @available(iOS 5.0, *)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(navigationBarClass: Swift.AnyClass?, toolbarClass: Swift.AnyClass?)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(rootViewController: UIKit.UIViewController)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @objc deinit
+}
+@available(iOS 11.0, *)
+extension UIKit.UIContextualAction {
+  @_Concurrency.MainActor(unsafe) public func invokeHandler(inSourceView sourceView: UIKit.UIView = UIView(), actionPerformedHandler: @escaping (Swift.Bool) -> Swift.Void = { _ in })
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) public class MockTransitionCoordinatingViewController : UIKit.UIViewController {
+  @_Concurrency.MainActor(unsafe) final public let mockTransitionCoordinator: DJATesting.MockTransitionCoordinator
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public var transitionCoordinator: UIKit.UIViewControllerTransitionCoordinator? {
+    @objc get
+  }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+extension UIKit.UIAlertAction {
+  @_Concurrency.MainActor(unsafe) public func invokeHandler()
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) public class MockNotificationFeedbackGenerator : UIKit.UINotificationFeedbackGenerator {
+  @_Concurrency.MainActor(unsafe) public var receivedPrepareMessage: Swift.Bool {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func prepare()
+  @_Concurrency.MainActor(unsafe) public var receivedNotificationType: UIKit.UINotificationFeedbackGenerator.FeedbackType? {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func notificationOccurred(_ notificationType: UIKit.UINotificationFeedbackGenerator.FeedbackType)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init()
+  @objc deinit
+}

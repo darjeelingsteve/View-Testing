@@ -1,0 +1,16 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.7 (swiftlang-5.7.0.127.4 clang-1400.0.29.50)
+// swift-module-flags: -target armv7k-apple-watchos4.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name DJATesting
+// swift-module-flags-ignorable: -enable-bare-slash-regex
+@_exported import DJATesting
+import Foundation
+import Swift
+import UIKit
+import _Concurrency
+import _StringProcessing
+extension Swift.Decodable {
+  public static func from(fileName: Swift.String, inBundle bundle: Foundation.Bundle, dateDecodingStrategy: Foundation.JSONDecoder.DateDecodingStrategy? = nil, keyDecodingStrategy: Foundation.JSONDecoder.KeyDecodingStrategy? = nil, dataDecodingStrategy: Foundation.JSONDecoder.DataDecodingStrategy? = nil) throws -> Self
+}
+extension ObjectiveC.NSObject {
+  public static func forcedInit() -> Self
+}

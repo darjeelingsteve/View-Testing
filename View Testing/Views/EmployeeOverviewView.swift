@@ -24,7 +24,6 @@ final class EmployeeOverviewView: UIView {
         imageView.translatesAutoresizingMaskIntoConstraints = false
         imageView.contentMode = .scaleAspectFill
         imageView.clipsToBounds = true
-        imageView.backgroundColor = .systemBackground
         imageView.layer.cornerRadius = 30
         imageView.addConstraints([
             imageView.widthAnchor.constraint(equalToConstant: imageView.layer.cornerRadius * 2),
@@ -63,7 +62,7 @@ final class EmployeeOverviewView: UIView {
     
     override init(frame: CGRect) {
         super.init(frame: frame)
-        backgroundColor = .systemBackground
+        backgroundColor = .secondarySystemGroupedBackground
         layer.cornerRadius = 8
         layer.cornerCurve = .continuous
         directionalLayoutMargins = NSDirectionalEdgeInsets(top: 16, leading: 16, bottom: 16, trailing: 16)
