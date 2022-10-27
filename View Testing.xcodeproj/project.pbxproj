@@ -14,6 +14,7 @@
 		48816B24290ADC58008F3FD4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48816B22290ADC58008F3FD4 /* LaunchScreen.storyboard */; };
 		48816B2D290AE18A008F3FD4 /* Employees.json in Resources */ = {isa = PBXBuildFile; fileRef = 48816B2C290AE18A008F3FD4 /* Employees.json */; };
 		48816B2F290AE195008F3FD4 /* Employee.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48816B2E290AE195008F3FD4 /* Employee.swift */; };
+		48816B31290AE514008F3FD4 /* EmployeeListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48816B30290AE514008F3FD4 /* EmployeeListViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		48816B25290ADC58008F3FD4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		48816B2C290AE18A008F3FD4 /* Employees.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Employees.json; sourceTree = "<group>"; };
 		48816B2E290AE195008F3FD4 /* Employee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Employee.swift; sourceTree = "<group>"; };
+		48816B30290AE514008F3FD4 /* EmployeeListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeListViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 			children = (
 				48816B2B290AE035008F3FD4 /* Data */,
 				48816B17290ADC57008F3FD4 /* AppDelegate.swift */,
+				48816B30290AE514008F3FD4 /* EmployeeListViewController.swift */,
 				48816B19290ADC57008F3FD4 /* SceneDelegate.swift */,
 				48816B1B290ADC57008F3FD4 /* ViewController.swift */,
 				48816B20290ADC58008F3FD4 /* Assets.xcassets */,
@@ -149,6 +152,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				48816B31290AE514008F3FD4 /* EmployeeListViewController.swift in Sources */,
 				48816B1C290ADC57008F3FD4 /* ViewController.swift in Sources */,
 				48816B2F290AE195008F3FD4 /* Employee.swift in Sources */,
 				48816B18290ADC57008F3FD4 /* AppDelegate.swift in Sources */,
