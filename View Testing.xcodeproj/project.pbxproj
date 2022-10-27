@@ -17,6 +17,7 @@
 		48816B31290AE514008F3FD4 /* EmployeeListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48816B30290AE514008F3FD4 /* EmployeeListViewController.swift */; };
 		48816B34290AED97008F3FD4 /* EmployeeOverviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48816B33290AED97008F3FD4 /* EmployeeOverviewView.swift */; };
 		48816B37290AF460008F3FD4 /* EmployeeDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48816B36290AF460008F3FD4 /* EmployeeDetailsViewController.swift */; };
+		48816B39290AF497008F3FD4 /* MainSceneRootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48816B38290AF497008F3FD4 /* MainSceneRootViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		48816B30290AE514008F3FD4 /* EmployeeListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeListViewController.swift; sourceTree = "<group>"; };
 		48816B33290AED97008F3FD4 /* EmployeeOverviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeOverviewView.swift; sourceTree = "<group>"; };
 		48816B36290AF460008F3FD4 /* EmployeeDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeDetailsViewController.swift; sourceTree = "<group>"; };
+		48816B38290AF497008F3FD4 /* MainSceneRootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainSceneRootViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 			children = (
 				48816B36290AF460008F3FD4 /* EmployeeDetailsViewController.swift */,
 				48816B30290AE514008F3FD4 /* EmployeeListViewController.swift */,
+				48816B38290AF497008F3FD4 /* MainSceneRootViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -180,6 +183,7 @@
 				48816B2F290AE195008F3FD4 /* Employee.swift in Sources */,
 				48816B18290ADC57008F3FD4 /* AppDelegate.swift in Sources */,
 				48816B1A290ADC57008F3FD4 /* SceneDelegate.swift in Sources */,
+				48816B39290AF497008F3FD4 /* MainSceneRootViewController.swift in Sources */,
 				48816B34290AED97008F3FD4 /* EmployeeOverviewView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
