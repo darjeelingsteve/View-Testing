@@ -139,7 +139,7 @@ extension EmployeeOverviewViewTests {
 
 private extension EmployeeOverviewView {
     var imageView: UIImageView {
-        subview(ofType: UIImageView.self, withAccessibilityIdentifier: "image_view")!
+        subview(ofType: UIImageView.self, withAccessibilityIdentifier: "photo_image_view")!
     }
     
     var nameLabel: UILabel {

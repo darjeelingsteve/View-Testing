@@ -13,26 +13,28 @@ final class EmployeeOverviewView: UIView {
     /// The employee whose details are shown.
     var employee: Employee? {
         didSet {
-            imageView.image = UIImage(named: employee?.name ?? "")
+            photoImageView.image = UIImage(named: employee?.name ?? "")
             nameLabel.text = employee?.name
             jobRoleLabel.text = employee?.jobRole
         }
     }
     
-    private let imageView: UIImageView = {
-        let imageView = UIImageView()
-        imageView.translatesAutoresizingMaskIntoConstraints = false
-        imageView.contentMode = .scaleAspectFill
-        imageView.clipsToBounds = true
-        imageView.layer.cornerRadius = 30
-        imageView.addConstraints([
-            imageView.widthAnchor.constraint(equalToConstant: imageView.layer.cornerRadius * 2),
-            imageView.heightAnchor.constraint(equalTo: imageView.widthAnchor)
+    /// The image view used to display the employee's photo.
+    private let photoImageView: UIImageView = {
+        let photoImageView = UIImageView()
+        photoImageView.translatesAutoresizingMaskIntoConstraints = false
+        photoImageView.contentMode = .scaleAspectFill
+        photoImageView.clipsToBounds = true
+        photoImageView.layer.cornerRadius = 30
+        photoImageView.addConstraints([
+            photoImageView.widthAnchor.constraint(equalToConstant: photoImageView.layer.cornerRadius * 2),
+            photoImageView.heightAnchor.constraint(equalTo: photoImageView.widthAnchor)
         ])
-        imageView.accessibilityIdentifier = "image_view"
-        return imageView
+        photoImageView.accessibilityIdentifier = "photo_image_view"
+        return photoImageView
     }()
     
+    /// The label used to display the employee's name.
     private let nameLabel: UILabel = {
         let nameLabel = UILabel()
         nameLabel.translatesAutoresizingMaskIntoConstraints = false
@@ -43,6 +45,7 @@ final class EmployeeOverviewView: UIView {
         return nameLabel
     }()
     
+    /// The label used to display the employee's job role.
     private let jobRoleLabel: UILabel = {
         let jobRoleLabel = UILabel()
         jobRoleLabel.translatesAutoresizingMaskIntoConstraints = false
@@ -67,20 +70,20 @@ final class EmployeeOverviewView: UIView {
         layer.cornerCurve = .continuous
         directionalLayoutMargins = NSDirectionalEdgeInsets(top: 16, leading: 16, bottom: 16, trailing: 16)
         
-        addSubview(imageView)
+        addSubview(photoImageView)
         addSubview(labelsContainerView)
         labelsContainerView.addSubview(nameLabel)
         labelsContainerView.addSubview(jobRoleLabel)
         
         addConstraints([
-            imageView.leadingAnchor.constraint(equalTo: layoutMarginsGuide.leadingAnchor),
-            imageView.topAnchor.constraint(equalTo: layoutMarginsGuide.topAnchor),
-            imageView.bottomAnchor.constraint(lessThanOrEqualTo: layoutMarginsGuide.bottomAnchor),
-            imageView.bottomAnchor.constraint(equalTo: layoutMarginsGuide.bottomAnchor).settingPriority(.defaultLow)
+            photoImageView.leadingAnchor.constraint(equalTo: layoutMarginsGuide.leadingAnchor),
+            photoImageView.topAnchor.constraint(equalTo: layoutMarginsGuide.topAnchor),
+            photoImageView.bottomAnchor.constraint(lessThanOrEqualTo: layoutMarginsGuide.bottomAnchor),
+            photoImageView.bottomAnchor.constraint(equalTo: layoutMarginsGuide.bottomAnchor).settingPriority(.defaultLow)
         ])
         
         addConstraints([
-            labelsContainerView.leadingAnchor.constraint(equalToSystemSpacingAfter: imageView.trailingAnchor, multiplier: 1.0),
+            labelsContainerView.leadingAnchor.constraint(equalToSystemSpacingAfter: photoImageView.trailingAnchor, multiplier: 1.0),
             labelsContainerView.trailingAnchor.constraint(equalTo: layoutMarginsGuide.trailingAnchor),
             labelsContainerView.topAnchor.constraint(greaterThanOrEqualTo: layoutMarginsGuide.topAnchor),
             labelsContainerView.centerYAnchor.constraint(equalTo: layoutMarginsGuide.centerYAnchor)
