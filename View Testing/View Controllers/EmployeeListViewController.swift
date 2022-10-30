@@ -26,6 +26,7 @@ final class EmployeeListViewController: UIViewController {
         collectionView.translatesAutoresizingMaskIntoConstraints = false
         collectionView.dataSource = self
         collectionView.delegate = self
+        collectionView.accessibilityIdentifier = "collection_view"
         return collectionView
     }()
     

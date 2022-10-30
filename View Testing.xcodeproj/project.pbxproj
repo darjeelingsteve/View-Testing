@@ -19,6 +19,7 @@
 		48816B39290AF497008F3FD4 /* MainSceneRootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48816B38290AF497008F3FD4 /* MainSceneRootViewController.swift */; };
 		48816B49290AF631008F3FD4 /* DJATesting.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48816B48290AF631008F3FD4 /* DJATesting.xcframework */; };
 		48816B4B290AF79F008F3FD4 /* EmployeeOverviewViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48816B4A290AF79F008F3FD4 /* EmployeeOverviewViewTests.swift */; };
+		48816B54290E990C008F3FD4 /* EmployeeListViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48816B53290E990C008F3FD4 /* EmployeeListViewControllerTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		48816B3E290AF59A008F3FD4 /* View TestingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "View TestingTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		48816B48290AF631008F3FD4 /* DJATesting.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = DJATesting.xcframework; sourceTree = "<group>"; };
 		48816B4A290AF79F008F3FD4 /* EmployeeOverviewViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeOverviewViewTests.swift; sourceTree = "<group>"; };
+		48816B53290E990C008F3FD4 /* EmployeeListViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeListViewControllerTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,8 +133,9 @@
 		48816B3F290AF59A008F3FD4 /* View TestingTests */ = {
 			isa = PBXGroup;
 			children = (
+				48816B51290E98DF008F3FD4 /* Views */,
+				48816B52290E98E9008F3FD4 /* View Controllers */,
 				48816B47290AF631008F3FD4 /* Frameworks */,
-				48816B4A290AF79F008F3FD4 /* EmployeeOverviewViewTests.swift */,
 			);
 			path = "View TestingTests";
 			sourceTree = "<group>";
@@ -143,6 +146,22 @@
 				48816B48290AF631008F3FD4 /* DJATesting.xcframework */,
 			);
 			path = Frameworks;
+			sourceTree = "<group>";
+		};
+		48816B51290E98DF008F3FD4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				48816B4A290AF79F008F3FD4 /* EmployeeOverviewViewTests.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		48816B52290E98E9008F3FD4 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				48816B53290E990C008F3FD4 /* EmployeeListViewControllerTests.swift */,
+			);
+			path = "View Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -260,6 +279,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				48816B54290E990C008F3FD4 /* EmployeeListViewControllerTests.swift in Sources */,
 				48816B4B290AF79F008F3FD4 /* EmployeeOverviewViewTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
