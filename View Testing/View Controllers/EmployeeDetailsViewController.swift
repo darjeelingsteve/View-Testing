@@ -9,6 +9,10 @@ import UIKit
 
 /// The view controller responsible for showing the details of an employee.
 final class EmployeeDetailsViewController: UIViewController {
+    
+    /// The employee whose details are shown by the receiver.
+    let employee: Employee
+    
     private let employeeOverviewView: EmployeeOverviewView = {
         let employeeOverviewView = EmployeeOverviewView()
         employeeOverviewView.translatesAutoresizingMaskIntoConstraints = false
@@ -54,6 +58,7 @@ final class EmployeeDetailsViewController: UIViewController {
     }()
     
     init(employee: Employee) {
+        self.employee = employee
         super.init(nibName: nil, bundle: nil)
         employeeOverviewView.employee = employee
         biographyLabel.text = employee.biography

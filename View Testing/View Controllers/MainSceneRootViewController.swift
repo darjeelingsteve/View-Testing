@@ -9,7 +9,16 @@ import UIKit
 
 /// The view controller used to manage the main scene's UI.
 final class MainSceneRootViewController: UIViewController {
-    private let childNavigationController = UINavigationController()
+    private let childNavigationController: UINavigationController
+    
+    init(childNavigationController: UINavigationController = UINavigationController()) {
+        self.childNavigationController = childNavigationController
+        super.init(nibName: nil, bundle: nil)
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -20,6 +20,7 @@
 		48816B49290AF631008F3FD4 /* DJATesting.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48816B48290AF631008F3FD4 /* DJATesting.xcframework */; };
 		48816B4B290AF79F008F3FD4 /* EmployeeOverviewViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48816B4A290AF79F008F3FD4 /* EmployeeOverviewViewTests.swift */; };
 		48816B54290E990C008F3FD4 /* EmployeeListViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48816B53290E990C008F3FD4 /* EmployeeListViewControllerTests.swift */; };
+		48816B56290E9CD8008F3FD4 /* MainSceneRootViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48816B55290E9CD8008F3FD4 /* MainSceneRootViewControllerTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		48816B48290AF631008F3FD4 /* DJATesting.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = DJATesting.xcframework; sourceTree = "<group>"; };
 		48816B4A290AF79F008F3FD4 /* EmployeeOverviewViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeOverviewViewTests.swift; sourceTree = "<group>"; };
 		48816B53290E990C008F3FD4 /* EmployeeListViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeListViewControllerTests.swift; sourceTree = "<group>"; };
+		48816B55290E9CD8008F3FD4 /* MainSceneRootViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainSceneRootViewControllerTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,6 +162,7 @@
 			isa = PBXGroup;
 			children = (
 				48816B53290E990C008F3FD4 /* EmployeeListViewControllerTests.swift */,
+				48816B55290E9CD8008F3FD4 /* MainSceneRootViewControllerTests.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -280,6 +283,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				48816B54290E990C008F3FD4 /* EmployeeListViewControllerTests.swift in Sources */,
+				48816B56290E9CD8008F3FD4 /* MainSceneRootViewControllerTests.swift in Sources */,
 				48816B4B290AF79F008F3FD4 /* EmployeeOverviewViewTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
