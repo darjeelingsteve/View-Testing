@@ -46,8 +46,8 @@ extension MainSceneRootViewControllerTests {
     func testItDisplaysAnEmployeeListViewControllerAsTheRootOfItsChildNavigationController() {
         givenAMainSceneRootViewController()
         whenTheViewLoads()
-        XCTAssertEqual(mockNavigationController.receivedViewControllers?.count, 1)
-        let childEmployeeListViewController = mockNavigationController.receivedViewControllers?[0] as! EmployeeListViewController
+        XCTAssertEqual(mockNavigationController.viewControllers.count, 1)
+        let childEmployeeListViewController = mockNavigationController.topViewController as! EmployeeListViewController
         XCTAssertIdentical(childEmployeeListViewController.delegate, mainSceneRootViewController)
     }
 }
