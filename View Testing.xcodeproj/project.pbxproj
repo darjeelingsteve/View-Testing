@@ -21,6 +21,7 @@
 		48816B4B290AF79F008F3FD4 /* EmployeeOverviewViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48816B4A290AF79F008F3FD4 /* EmployeeOverviewViewTests.swift */; };
 		48816B54290E990C008F3FD4 /* EmployeeListViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48816B53290E990C008F3FD4 /* EmployeeListViewControllerTests.swift */; };
 		48816B56290E9CD8008F3FD4 /* MainSceneRootViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48816B55290E9CD8008F3FD4 /* MainSceneRootViewControllerTests.swift */; };
+		48816B58290EA0B9008F3FD4 /* EmployeeDetailsViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48816B57290EA0B9008F3FD4 /* EmployeeDetailsViewControllerTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		48816B4A290AF79F008F3FD4 /* EmployeeOverviewViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeOverviewViewTests.swift; sourceTree = "<group>"; };
 		48816B53290E990C008F3FD4 /* EmployeeListViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeListViewControllerTests.swift; sourceTree = "<group>"; };
 		48816B55290E9CD8008F3FD4 /* MainSceneRootViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainSceneRootViewControllerTests.swift; sourceTree = "<group>"; };
+		48816B57290EA0B9008F3FD4 /* EmployeeDetailsViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeDetailsViewControllerTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -161,6 +163,7 @@
 		48816B52290E98E9008F3FD4 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				48816B57290EA0B9008F3FD4 /* EmployeeDetailsViewControllerTests.swift */,
 				48816B53290E990C008F3FD4 /* EmployeeListViewControllerTests.swift */,
 				48816B55290E9CD8008F3FD4 /* MainSceneRootViewControllerTests.swift */,
 			);
@@ -285,6 +288,7 @@
 				48816B54290E990C008F3FD4 /* EmployeeListViewControllerTests.swift in Sources */,
 				48816B56290E9CD8008F3FD4 /* MainSceneRootViewControllerTests.swift in Sources */,
 				48816B4B290AF79F008F3FD4 /* EmployeeOverviewViewTests.swift in Sources */,
+				48816B58290EA0B9008F3FD4 /* EmployeeDetailsViewControllerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

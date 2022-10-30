@@ -16,6 +16,7 @@ final class EmployeeDetailsViewController: UIViewController {
     private let employeeOverviewView: EmployeeOverviewView = {
         let employeeOverviewView = EmployeeOverviewView()
         employeeOverviewView.translatesAutoresizingMaskIntoConstraints = false
+        employeeOverviewView.accessibilityIdentifier = "employee_overview"
         return employeeOverviewView
     }()
     
@@ -38,6 +39,7 @@ final class EmployeeDetailsViewController: UIViewController {
         biographyTitleLabel.font = UIFont(descriptor: descriptor, size: 0)
         biographyTitleLabel.adjustsFontForContentSizeCategory = true
         biographyTitleLabel.adjustsFontSizeToFitWidth = true
+        biographyTitleLabel.accessibilityIdentifier = "biography_title"
         return biographyTitleLabel
     }()
     
@@ -47,6 +49,7 @@ final class EmployeeDetailsViewController: UIViewController {
         biographyLabel.font = .preferredFont(forTextStyle: .body)
         biographyLabel.numberOfLines = 0
         biographyLabel.adjustsFontForContentSizeCategory = true
+        biographyLabel.accessibilityIdentifier = "biography"
         return biographyLabel
     }()
     
