@@ -62,9 +62,11 @@ extension EmployeeListViewControllerTests {
     func testItDisplaysTheCorrectEmployeeData() {
         givenAnEmployeeListViewController()
         whenTheViewIsLaidOut()
-        let cell = whenTheCollectionViewVendsCell(atIndexPath: IndexPath(item: 4, section: 0))
-        let contentConfiguration = cell?.contentConfiguration as! UIListContentConfiguration
-        XCTAssertEqual(contentConfiguration.text, employees[4].name)
+        for (index, employee) in employees.enumerated() {
+            let cell = whenTheCollectionViewVendsCell(atIndexPath: IndexPath(item: index, section: 0))
+            let contentConfiguration = cell?.contentConfiguration as! UIListContentConfiguration
+            XCTAssertEqual(contentConfiguration.text, employee.name)
+        }
     }
 }
 
